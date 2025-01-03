@@ -117,6 +117,8 @@ class TestFormInput(unittest.TestCase):
             # You need not use executeScript in Java since it can 
             # be done using "getAttribute(validationMessage)"
             # document.getElementById("input-email").validationMessage
+            # However, getAttribute will not work with Selenium 4.27.0
+            # https://github.com/SeleniumHQ/selenium/issues/13334
 
             # This will raise an assert and test will be failed
             # However our usecase is to capture the tool-tip text
