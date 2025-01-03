@@ -1,17 +1,8 @@
-# Tutorial: Automated Testing using Selenium Python
+# Tool-Tip text validation with Selenium & Python
 
-<img width="700" height="400" alt="Bulb" src="https://github.com/user-attachments/assets/2806cf9b-56ae-418d-88dd-a27a9f7d71a6">
+<img width="700" height="400" alt="Automation" src="https://github.com/user-attachments/assets/c438af79-e9e3-441a-9eec-92b59f22dc9c">
 
-<div align="center"><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_utiFN8XiYDKXMtI1UW8YG4buAslJnsuBNw&s">Image Credit</a></div>
-<br/>
-
-In this 'Automated Testing using Selenium Python Tutorial' repo, we have covered the following usecases:
-
-* <b>Execution of simple Python tests</b>
-* <b>Automating keyboard and mouse interactions</b>
-* <b>Switching tabs & windows</b>
-* <b>Handling drop-downs, radio-buttons, and alerts</b>
-* <b>Automating Frame and iFrame interactions</b>
+Repo Inspiration : [YouTube Video](https://www.youtube.com/watch?v=qItS8AXOwww)
 
 ## Pre-requisites for test execution
 
@@ -42,7 +33,7 @@ Procure the LambdaTest User Name and Access Key by navigating to [LambdaTest Acc
 
 Add the LambdaTest User Name and Access Key in the *Makefile* that is located in the parent directory. Once done, save the Makefile.
 
-![1_Makefile](https://github.com/user-attachments/assets/8c98b44c-efd7-4a50-8647-e5477c007068)
+![Makefile](https://github.com/user-attachments/assets/9789bc91-b2e3-4a38-b31b-03f9c6a792c6)
 
 ## Dependency/Package Installation
 
@@ -55,16 +46,17 @@ make install
 
 <img width="1404" alt="Make-Install-2" src="https://github.com/hjsblogger/web-scraping-with-python/assets/1688653/8c7e8938-5584-480b-ad04-002b53827396">
 
-With this, all the dependencies and environment variables are set. Instead of PyUnit/*unittest*, the Pytest framework is used for test execution. The following websites are used for demonstration:
-
-* [LambdaTest Selenium Playground](https://lambdatest.com/selenium-playground)
-* [LambdaTest E-commerce Playground](https://ecommerce-playground.lambdatest.io/)
+With this, all the dependencies and environment variables are set. Instead of PyUnit/*unittest*, the Pytest framework is used for test execution. The
+[LambdaTest Selenium Playground - Input Form Demo](https://www.lambdatest.com/selenium-playground/input-form-demo) website is used for demonstration purposes.
 
 Follow the below mentioned steps to run automated tests using Selenium Python:
 
 **Step 1**
 
-Set *EXEC_PLATFORM* environment variable to *cloud*. Trigger the command *export EXEC_PLATFORM=local* on the terminal.
+Change the *EXEC_PLATFORM* variable to *local* in [.env](https://github.com/hjsblogger/selenium-tool-tip-validation/blob/master/.env) in case you want to run tests on your local machine.
+
+Alternatively, you can also set *EXEC_PLATFORM* environment variable to *cloud*. Trigger the command *export EXEC_PLATFORM=local* on the terminal.
+
 
 **Step 2**
 
@@ -74,19 +66,15 @@ Trigger the command *make clean* to clean the remove _pycache_ folder(s) and .py
 
 **Step 3**
 
-Trigger the respective *make* command on the terminal to run the test(s). For example, run the command *make mouse_interactions_test* for triggering mouse interaction tests.
+Trigger the respective *make* command on the terminal to run the test(s). For example, run the command *make tool_tip_verification_demo* for triggering the test that validates the tool-tip.
 
-<img width="1428" src="https://github.com/user-attachments/assets/96cda0bf-e0ed-4e5e-8b8e-d4416d8246df">
+<img width="1417" alt="MakeCommand" src="https://github.com/user-attachments/assets/603cc2c9-f0d0-4d9b-a70c-c4d85c4c5072" />
 
 As seen above, the test execution was successful and the status is "Completed". You can find the status of test execution in the [LambdaTest Automation Dashboard](https://automation.lambdatest.com/build).
 
-<img width="1440" src="https://github.com/user-attachments/assets/b8c562b4-6e30-49e3-874b-90a150634cf7">
+<img width="1439" alt="Dashboard_1" src="https://github.com/user-attachments/assets/5445d389-93dc-4a27-9f65-baa1de8d3902" />
 
-<img width="1440" src="https://github.com/user-attachments/assets/b657d060-c09b-482f-8dc7-a1bf2373f15c">
-
-Simply type *make help* on the terminal to know the command for running the intended test(s).
-
-<img width="627" src="https://github.com/user-attachments/assets/207c5706-74e7-4508-8a04-e97f251ccfe9">
+<img width="1439" alt="Dashboard_2" src="https://github.com/user-attachments/assets/cff0583e-9acf-4860-befc-0de447083c5a" />
 
 ## Have feedback or need assistance?
 Feel free to fork the repo and contribute to make it better! Email to [himanshu[dot]sheth[at]gmail[dot]com](mailto:himanshu.sheth@gmail.com) for any queries or ping me on the following social media sites:
